@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Dashboard</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Social Media Dashboard</h1>
+    </header>
+    <main>
+        <section id="overview">
+            <canvas id="followersChart"></canvas>
+
+        </section>
+        <section id="overview">
+            <div class="metric">
+                <p>Followers Count</p>
+                <h3 id="followers-count">0</h3>
+            </div>
+            <div class="metric">
+                <p>Likes</p>
+                <h3 id="likes-count">0</h3>
+            </div>
+            <button id="refreshBtn">Refresh Data</button>
+        </section>
+        
+        <section id="platforms">            
+            <canvas id="performanceChart" width="400" height="200"></canvas>
+        </section>
+        
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Social Media Dashboard</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/js/script.js"></script>   
+</body>
+</html>
